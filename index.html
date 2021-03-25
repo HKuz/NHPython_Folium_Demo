@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3b50ce969cab4edb82d9a3ac5acff84c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3b50ce969cab4edb82d9a3ac5acff84c" ></div>
+        
+</body>
+<script>    
+    
+            var map_3b50ce969cab4edb82d9a3ac5acff84c = L.map(
+                "map_3b50ce969cab4edb82d9a3ac5acff84c",
+                {
+                    center: [43.7, -71.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f76ba17f27dc4645815cca26dcfd8242 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            var circle_899df6af3e6745dab054bb6c29586eff = L.circle(
+                [43.5876, -71.3878],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_899df6af3e6745dab054bb6c29586eff.bindTooltip(
+                `<div>
+                     lady of the lake
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a9d875a8973542afa2b6b849482a0780 = L.circle(
+                [43.5958, -71.3253],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_a9d875a8973542afa2b6b849482a0780.bindTooltip(
+                `<div>
+                     Lake Winnipesaukee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c5efb4f4a1d94d448d021aa79da2418c = L.circle(
+                [43.5717, -71.212],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_c5efb4f4a1d94d448d021aa79da2418c.bindTooltip(
+                `<div>
+                     Clark’s Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3c8c9fb2f6dd4514a3f301984b6351ad = L.circle(
+                [43.3881, -72.0561],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_3c8c9fb2f6dd4514a3f301984b6351ad.bindTooltip(
+                `<div>
+                     Lake Sunapee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_93f64eab54b941d6a37408a7282a64f6 = L.circle(
+                [43.3041, -70.576],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_93f64eab54b941d6a37408a7282a64f6.bindTooltip(
+                `<div>
+                     Wells Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dc13b09afc26496890f40c8711b6f037 = L.circle(
+                [43.3024, -70.5619],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_dc13b09afc26496890f40c8711b6f037.bindTooltip(
+                `<div>
+                     Wreck of the Wandby
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_723cd79809294b2585f0c29ca417734d = L.circle(
+                [43.7256, -70.2042],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_723cd79809294b2585f0c29ca417734d.bindTooltip(
+                `<div>
+                     York Ledge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b1f5a1eebf1b4c13a4f5c155ec77026a = L.circle(
+                [43.533, -70.3028],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_b1f5a1eebf1b4c13a4f5c155ec77026a.bindTooltip(
+                `<div>
+                     Sagamore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_217e3827244b47e69fe11cf66bbff56d = L.circle(
+                [43.5032, -70.3132],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_217e3827244b47e69fe11cf66bbff56d.bindTooltip(
+                `<div>
+                     Stration Is
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fd42ac83443949c79a1e66d261a8c6c1 = L.circle(
+                [43.3462, -70.4586],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_fd42ac83443949c79a1e66d261a8c6c1.bindTooltip(
+                `<div>
+                     Wreck of the Wandby
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bcf1d9f37b524af4814a92528a945fa7 = L.circle(
+                [43.6256, -70.2132],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_bcf1d9f37b524af4814a92528a945fa7.bindTooltip(
+                `<div>
+                     Fort Williams / Ships Cove
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_141854075a474017bc30f8924f20b95e = L.circle(
+                [43.4456, -70.3393],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_141854075a474017bc30f8924f20b95e.bindTooltip(
+                `<div>
+                     Biddeford Pool, ME
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_aa5d81110b4749058b41d7ea5fea08f2 = L.circle(
+                [43.4447, -70.3242],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_aa5d81110b4749058b41d7ea5fea08f2.bindTooltip(
+                `<div>
+                     Biddeford Pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0ac920a9f01940939c3557a76a4eff9a = L.circle(
+                [43.5617, -70.2193],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_0ac920a9f01940939c3557a76a4eff9a.bindTooltip(
+                `<div>
+                     Kettle Cove
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_93d6d23f9a7c4f05995507a1f6bd1aad = L.circle(
+                [42.9966, -72.0504],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_93d6d23f9a7c4f05995507a1f6bd1aad.bindTooltip(
+                `<div>
+                     Lake Nubanusit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7fd9264364664654b3e2261a7da13e3c = L.circle(
+                [43.5648, -70.1984],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_7fd9264364664654b3e2261a7da13e3c.bindTooltip(
+                `<div>
+                     Twin Lights
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5e8c9cdb8a0f4e6f82924f4a24c94ec9 = L.circle(
+                [43.0881, -70.7593],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_5e8c9cdb8a0f4e6f82924f4a24c94ec9.bindTooltip(
+                `<div>
+                     Sarah Mildred Long Bridge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ed014de82ce14ce1b37b2b887af547cc = L.circle(
+                [43.1652, -70.592],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_ed014de82ce14ce1b37b2b887af547cc.bindTooltip(
+                `<div>
+                     Nubble Light House, York,ME.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_20a84bb013344ad28bbee1835ee50151 = L.circle(
+                [43.0813, -70.7083],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_20a84bb013344ad28bbee1835ee50151.bindTooltip(
+                `<div>
+                     Fort McClary
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bfba1ece1d934100866b87acaeae37ff = L.circle(
+                [43.0728, -70.7188],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_bfba1ece1d934100866b87acaeae37ff.bindTooltip(
+                `<div>
+                     Portsmouth Yacht Club
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e4edc82cea804064ba5a90108ea9bf77 = L.circle(
+                [43.0715, -70.713],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_e4edc82cea804064ba5a90108ea9bf77.bindTooltip(
+                `<div>
+                     Hart.s Cove
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7b529088e3f944538b9efad774110333 = L.circle(
+                [43.0645, -70.712],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_7b529088e3f944538b9efad774110333.bindTooltip(
+                `<div>
+                     Great Island Commons
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_29de75b618ae4beb8a8c371321407137 = L.circle(
+                [43.0589, -70.7123],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_29de75b618ae4beb8a8c371321407137.bindTooltip(
+                `<div>
+                     Fort Stark
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_62e720ba498a4491a30dc960c6baaa59 = L.circle(
+                [43.0668, -70.6933],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_62e720ba498a4491a30dc960c6baaa59.bindTooltip(
+                `<div>
+                     Fort Foster
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_87571e1e2dd445aebdc5ee52b7d22f63 = L.circle(
+                [43.0472, -70.7196],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_87571e1e2dd445aebdc5ee52b7d22f63.bindTooltip(
+                `<div>
+                     Sunken Forest
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a13cd0c0b2e14a47b6ba8e9f348b2091 = L.circle(
+                [42.9492, -72.1341],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_a13cd0c0b2e14a47b6ba8e9f348b2091.bindTooltip(
+                `<div>
+                     Silver Lake
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_583c080b720347d4a281538b4ced07f8 = L.circle(
+                [43.033, -70.7183],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_583c080b720347d4a281538b4ced07f8.bindTooltip(
+                `<div>
+                     Pulpit Rock
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c0135e1e0ed049bb924d26ca60d9590a = L.circle(
+                [43.0279, -70.7256],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_c0135e1e0ed049bb924d26ca60d9590a.bindTooltip(
+                `<div>
+                     Seal Rocks
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9b79491aff654bd7824d32ce32192c14 = L.circle(
+                [43.7258, -69.9921],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_9b79491aff654bd7824d32ce32192c14.bindTooltip(
+                `<div>
+                     Giant Stair Case
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e36cca2389584364bffc4ef3d18abdfd = L.circle(
+                [43.12, -70.4787],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_e36cca2389584364bffc4ef3d18abdfd.bindTooltip(
+                `<div>
+                     Empire Knight, at Boone Is
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_375059616d3d46eba48cb4da41ec7b34 = L.circle(
+                [42.9406, -70.7935],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_375059616d3d46eba48cb4da41ec7b34.bindTooltip(
+                `<div>
+                     Plaice Cove
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e434549ff5704ed6ad74f8a051301481 = L.circle(
+                [43.0029, -70.6065],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_e434549ff5704ed6ad74f8a051301481.bindTooltip(
+                `<div>
+                     Duck Island
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_af0ab7a73fba48dc97bbe96a966556d8 = L.circle(
+                [43.0014, -70.6014],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_af0ab7a73fba48dc97bbe96a966556d8.bindTooltip(
+                `<div>
+                     Seal Cove & Mingo Rock - Isle of Sh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5bcfeaaf4198460b8be4861abd250dac = L.circle(
+                [42.9873, -70.6203],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_5bcfeaaf4198460b8be4861abd250dac.bindTooltip(
+                `<div>
+                     Appledore Island
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c38a7a08eac64946ba2ffba1663fa136 = L.circle(
+                [42.9753, -70.5996],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_c38a7a08eac64946ba2ffba1663fa136.bindTooltip(
+                `<div>
+                     Isle of Shoals
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d1028803240846019a2868fa6f638a3c = L.circle(
+                [43.7562, -73.2682],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_d1028803240846019a2868fa6f638a3c.bindTooltip(
+                `<div>
+                     Sunset Lake
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_01cb947b431f40c597e8d65ddd135a61 = L.circle(
+                [44.2664, -73.2966],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_01cb947b431f40c597e8d65ddd135a61.bindTooltip(
+                `<div>
+                     Thompsons Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a0a04972e6374ed4b1c4d22b60b8eb91 = L.circle(
+                [43.0849, -70.1807],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_a0a04972e6374ed4b1c4d22b60b8eb91.bindTooltip(
+                `<div>
+                     Sunken Forest
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d4d8db740a6e46ca8eb1509265b7ad66 = L.circle(
+                [42.9423, -70.3592],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_d4d8db740a6e46ca8eb1509265b7ad66.bindTooltip(
+                `<div>
+                     Plaice Cove
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2ac9d335e425447fa466194b61ea2cdb = L.circle(
+                [44.5333, -73.3333],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_2ac9d335e425447fa466194b61ea2cdb.bindTooltip(
+                `<div>
+                     Lake Champlain, Vermont
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1c2f91b9ab284121a9529901d403a6e5 = L.circle(
+                [43.1131, -70.0159],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_3b50ce969cab4edb82d9a3ac5acff84c);
+        
+    
+            circle_1c2f91b9ab284121a9529901d403a6e5.bindTooltip(
+                `<div>
+                     Great Island Commons
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
